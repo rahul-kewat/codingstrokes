@@ -16,9 +16,9 @@ class CreateUsersAccountLoggedInHistoryTable extends Migration
         Schema::create('users_account_logged_in_history', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
-            $table->intger('device_id')->unsigned();
-            $table->timestamps('last_logged_in_time');
-            $table->timestamps('last_logged_out_time');
+            $table->integer('device_id')->unsigned();
+            $table->timestamp('last_logged_in_time')->nullable();
+            $table->timestamp('last_logged_out_time')->nullable();
             $table->timestamps();
         });
     }

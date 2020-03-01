@@ -1,8 +1,8 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Coding Strokes | Learn and enhance your skills to find the perfect job</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,26 +13,18 @@
 <body>
 <nav class="navbar navbar-expand-md navbar-light mb-3">
     <div class="container-fluid">
-        <a href="#" class="navbar-brand mr-3"><img src="../images/CodingStrokes_logo_image.png" height="40px"></a>
+        <a href="#" class="navbar-brand mr-3"><img src="CodingStrokes.png" height="40px"></a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-        
+            
             <div class="navbar-nav ml-auto">
                 <a href="#" class="nav-item nav-link">Donate Us <i class="fa fa-heart"></i> </a> &nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="#" class="nav-item nav-link">About Us</a> &nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="#" class="nav-item nav-link">Pricing</a> &nbsp;&nbsp;&nbsp;&nbsp;
-                @if (Route::has('login'))
-                    @auth
-                        <a href="{{ url('/home') }}"  class="nav-item nav-link">Home</a>
-                    @else
-                        <a href="{{ route('login') }}"  class="nav-item nav-link">Login</a>
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}"  class="nav-item nav-link">Register</a>
-                        @endif
-                    @endauth
-                @endif
+                <a href="#" class="nav-item nav-link">Register</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="nav-item nav-link">Login</a> &nbsp;&nbsp;&nbsp;&nbsp;
             </div>
         </div>
     </div>    
@@ -41,7 +33,7 @@
     <div class="jumbotron bg-white">
         <div class="row">
             <div class="col-sm-6">
-                <img src="../images/watering_plant_home_page_image.png">
+                <img src="watering_plant.png">
             </div>
             <div class="col-sm-6">
                 <h4>Learn & Enjoy the community of developers with best in class tutorials written by us.</h4>
@@ -93,8 +85,12 @@
             </p>
         </div>
     </div>
-<br><br><br><br><br>
-<hr>
+
+    
+
+    <br><br><br><br><br>
+    <hr>
+</div>
 <footer>
     <div class="row">
         <div class="col-md-6">
@@ -107,6 +103,5 @@
         </div>
     </div>
 </footer>
-</div>
 </body>
-</html>
+</html>                            
