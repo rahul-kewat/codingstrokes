@@ -60,3 +60,9 @@ input[type="color"]:focus,
 .nav .nav-tabs a{
   color:rgb(193, 9, 88);
 }
+.articleListHeading{
+  color:rgb(193, 9, 88);
+}
+.articleListPara{
+  font-size: 13px;
+}
