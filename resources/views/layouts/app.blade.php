@@ -4,19 +4,26 @@
     <meta charset="utf-8">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Coding Strokes | Learn and enhance your skills to find the perfect job</title>
+    <title>@yield('title') | Codingstrokes.com | Coding Strokes | Learn and enhance your skills to find the perfect job</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/customcss.css">
+    <link rel="stylesheet" href={!! asset('css/customcss.css') !!}>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    
+  
+
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light mb-3">
             <div class="container-fluid">
-                <a href="/" class="navbar-brand mr-3"><img src="../images/CodingStrokes_logo_image.png" height="40px"></a>
+                <a href="/home" class="navbar-brand mr-3"><img src={!! asset('images/CodingStrokes_logo_image.png') !!} height="40px"></a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -47,6 +54,7 @@
                                     </form>
                                 </div>
                             </li>
+                            
                         @endguest
                     </ul>
                 </div>
@@ -57,5 +65,20 @@
             @yield('content')
         </main>
     </div>
+    <hr>
+    <footer>
+        <div class="container">
+            <div class="row">
+            <div class="col-md-6">
+                <p>Copyright &copy; 2020 Coding Strokes</p>
+            </div>
+            <div class="col-md-6 text-md-right">
+                <a href="#" class="text-dark">Terms of Use</a> 
+                <span class="text-muted mx-2">|</span> 
+                <a href="#" class="text-dark">Privacy Policy</a>
+            </div>
+        </div>
+        </div>
+    </footer>
 </body>
 </html>

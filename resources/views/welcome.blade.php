@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Coding Strokes | Learn and enhance your skills to find the perfect job</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -44,56 +45,18 @@
                 <img src="../images/watering_plant_home_page_image.png">
             </div>
             <div class="col-sm-6">
+            <br>
                 <h4>Learn & Enjoy the community of developers with best in class tutorials written by us.</h4>
-                <br><br>
+                <br>
                 <p>
                     We are pleased to offer you the best quality tutorials so that you can learn and enhance your skills. <br><br>
-                    Developers are the backbone of this digital world. Thus we pledged to make this more stronger by giving proper training to the geeks. It will be so pleasurable for us to help other geeks like us. Please let us know if you face any of the problem at our platform.
+                    Developers are the backbone of this digital world. Thus we pledged to make this more stronger by giving proper training to the geeks. It will be so pleasurable for us to help other geeks struggling to grab some complex concepts.
                 </p>
+                <a class="btn" href="/login" style="background-color: rgb(193, 9, 88); color: white;">Start Journey Now </a>
                 <br>
-                Register or Login with the Phone No<br>
-                <form>
-                    <div class="form-row">
-                      <div>
-                        <label class="sr-only" for="inlineFormInputGroupUsername">Username</label>
-                        <div class="input-group">
-                          <div class="input-group-prepend">
-                            <div class="input-group-text">Phone Number</div>
-                          </div>
-                          <input type="text" class="form-control" id="inlineFormInputGroupUsername">
-                        </div>
-                      </div>
-                      &nbsp;&nbsp;&nbsp;
-                      <button class="btn" type="submit" style="background-color: rgb(193, 9, 88); color: white;">Login/Register</button>
-                    </div>
-                  </form>
-                  <p style="font-size: 10px;margin-right:25px;">            
-                  By entering your phone number, you expressly consent to be contacted by us to receive SMS messages (including text messages). You represent that you are permitted to receive messages to the phone number you have provided to us. You agree to promptly alert us whenever you stop using this phone number. Standard messaging rates apply. 
-                </p>
-            </div>
-        </div>
-        <br><br>
-        <div class="row">
-            <div class="col-md-6">
-                
-            </div>
-            <div class="col-md-6">
-                <h6>Join us now & become a part of our community</h6>
-                <p>
-                    The best thing what we can do is based upon your performance and technical skills we can help you in getting placed in your campus or off-campus interviews or we will be giving you the chance to get placed into the companies with whom we have tied up. 
-                </p>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-6">
-            <h6>Join us now & become a part of our community</h6>
-            <p>
-                The best thing what we can do is based upon your performance and technical skills we can help you in getting placed in your campus or off-campus interviews or we will be giving you the chance to get placed into the companies with whom we have tied up. 
-            </p>
-        </div>
-    </div>
-<br><br><br><br><br>
 <hr>
 <footer>
     <div class="row">

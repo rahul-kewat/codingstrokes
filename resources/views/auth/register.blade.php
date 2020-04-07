@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title')
+    Register
+@endsection
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -58,6 +62,50 @@
 
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="phone_country_code" class="col-md-4 col-form-label text-md-right">{{ __('Country Code') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="phone_country_code" type="number" class="form-control{{ $errors->has('phone_country_code') ? ' is-invalid' : '' }}" name="phone_country_code" required>
+
+                                @if ($errors->has('phone_country_code'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('phone_country_code') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="phone_no" class="col-md-4 col-form-label text-md-right">{{ __('Phone No') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="phone_no" type="text" class="form-control{{ $errors->has('phone_no') ? ' is-invalid' : '' }}" name="phone_no" required>
+
+                                @if ($errors->has('phone_no'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('phone_no') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="gender" class="col-md-4 col-form-label text-md-right">{{ __('Gender') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="gender_male" type="radio" value="0"  name="gender" required> <label for="gender_male">{{ __('Male') }}</label>
+                                <input id="gender_female" type="radio" value="1" name="gender" required> <label for="gender_female" >{{ __('Female') }}</label>
+                                <input id="gender_others" type="radio" value="2" name="gender" required> <label for="gender_others" >{{ __('Others') }}</label>
+
+
+                                @if ($errors->has('gender'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('gender') }}</strong>
+                                    </span>
+                                @endif
                             </div>
                         </div>
 
