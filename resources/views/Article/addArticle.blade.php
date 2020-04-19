@@ -1,0 +1,1 @@
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
