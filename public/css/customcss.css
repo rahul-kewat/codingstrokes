@@ -46,7 +46,14 @@ input[type="color"]:focus,
   background-color: #222;
   color: white;
 }
+<<<<<<< HEAD
 
+=======
+.articleContent::selection{
+  background-color:rgba(193, 9, 88, 0.8);
+  color: white;
+}
+>>>>>>> 288c2cab575d4a8f6fc86da01d9f4063a88ac67e
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
   background-color: rgba(222, 243, 213, 0.2);
   font-weight: 500;
@@ -54,11 +61,18 @@ input[type="color"]:focus,
 }
 
 
+<<<<<<< HEAD
+=======
+.nav .nav-tabs a{
+  color:rgb(193, 9, 88);
+}
+>>>>>>> 288c2cab575d4a8f6fc86da01d9f4063a88ac67e
 .articleListHeading{
   color:rgb(193, 9, 88);
 }
 .articleListPara{
   font-size: 13px;
+<<<<<<< HEAD
 }
 .articleListUpdatedAt{
   font-size: 11px;
@@ -76,4 +90,6 @@ input[type="color"]:focus,
   align-items: center;
   text-align: center;
   min-height: 65vh;
+=======
+>>>>>>> 288c2cab575d4a8f6fc86da01d9f4063a88ac67e
 }

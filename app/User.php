@@ -36,6 +36,7 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+<<<<<<< HEAD
 
     // This will fetch 5 published articles from the particular user
     public function articles(){
@@ -50,4 +51,6 @@ class User extends Authenticatable
                     ->distinct();
     }
 
+=======
+>>>>>>> 288c2cab575d4a8f6fc86da01d9f4063a88ac67e
 }

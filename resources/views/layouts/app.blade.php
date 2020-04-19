@@ -21,12 +21,17 @@
 </head>
 <body>
     <div id="app">
+<<<<<<< HEAD
         <nav class="navbar navbar-expand-md navbar-light mb-3 ">
+=======
+        <nav class="navbar navbar-expand-md navbar-light mb-3">
+>>>>>>> 288c2cab575d4a8f6fc86da01d9f4063a88ac67e
             <div class="container-fluid">
                 <a href="/home" class="navbar-brand mr-3"><img src={!! asset('images/CodingStrokes_logo_image.png') !!} height="40px"></a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+<<<<<<< HEAD
                 
                 <form style="width:50%;" action="/search">
                     <div class="input-group">
@@ -40,6 +45,8 @@
                 </form>
                 
 
+=======
+>>>>>>> 288c2cab575d4a8f6fc86da01d9f4063a88ac67e
 
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
