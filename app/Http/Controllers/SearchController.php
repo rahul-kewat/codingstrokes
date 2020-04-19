@@ -47,7 +47,7 @@ class SearchController extends Controller
                 $q->orWhere('title', 'like', "%{$value}%");
             }
         })->orderBy('created_at','DESC')->get();
-        
+         
         return view('searchResult',compact('articles'));
         
     }
