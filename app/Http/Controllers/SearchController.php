@@ -46,7 +46,7 @@ class SearchController extends Controller
             foreach ($searchValues as $value) {
                 $q->orWhere('title', 'like', "%{$value}%");
             }
-        })->orderBy('created_at','DESC')->get();
+        })->orderBy('created_at','DESC')->paginate(1);
          
         return view('searchResult',compact('articles'));
         

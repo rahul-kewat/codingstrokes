@@ -15,7 +15,8 @@
             </blockquote>
         </div>
         <br>
-        <form class="form-inline row" action="/search">
+        <form class="form-inline row" method="GET" action="/search">
+            
             <div class="form-group">
                 <select class="form-control mb-2 mr-sm-2" id="category" name="category">
                     <option>Articles</option>

@@ -27,18 +27,20 @@
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
-                <form style="width:50%;" action="/search">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                        <div class="input-group-btn">
-                        <button class="btn btn-default" type="submit">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </button>
-                        </div>
+                @if (\Request::is('search'))  
+                <form class="form-inline row" method="GET" action="/search">
+                   
+                    <div class="form-group">
+                        <select class="form-control mb-2 mr-sm-2" id="category" name="category">
+                            <option>Articles</option>
+                            <option>Error Codes</option>
+                            <option>Tutorials</option>
+                        </select>
                     </div>
+                    <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Enter keyword" id="search_text" name="search_text">
+                    <button type="submit" class="btn btn-success mb-2">Search</button>
                 </form>
-                
+                @endif
 
 
                 <div class="collapse navbar-collapse" id="navbarCollapse">

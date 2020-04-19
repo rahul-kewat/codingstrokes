@@ -44,7 +44,7 @@
             </div>
                 <a href='{!! $article->urldest !!}' ><h4></h4></a>
             @endforeach
-                
+            {{ $articles->appends(request()->query())->links() }}
         </div>
         @else
             <div class="text-center">
