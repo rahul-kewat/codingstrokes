@@ -30,13 +30,9 @@
             <div class="tab-pane fade show active" id="nav-text-material" role="tabpanel" aria-labelledby="nav-home-tab">
                 @if($article->content!="")
                     <br>
-<<<<<<< HEAD
                     <!--  -->
                         {!! $article->content !!}
                     <!--  -->
-=======
-                    {!! $article->content !!}
->>>>>>> 288c2cab575d4a8f6fc86da01d9f4063a88ac67e
                 @else
                     <br>
                     <p class="text-center" style="color:rgba(0,0,0,0.4)">No Content available</p>
